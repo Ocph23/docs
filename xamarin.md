@@ -1,6 +1,7 @@
 # Xamarin
 - Remove Entry UnderLine
     *On Share Project
+  ```
     public class EntryCustom : Entry
     {
         public static readonly BindableProperty IsPasswordFlagProperty =
@@ -12,8 +13,10 @@
         }
     }
 
+    ```
+
     * On Android Project
-    [assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomEntryRendererAndroid))]
+   ``` [assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomEntryRendererAndroid))]
     namespace RefreshViewDemo.Droid
     {
         public class CustomEntryRendererAndroid : EntryRenderer
@@ -40,3 +43,4 @@
         {
         }
     }
+    ```
