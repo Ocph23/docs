@@ -16,7 +16,8 @@
     ```
 
     * On Android Project
-   ``` [assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomEntryRendererAndroid))]
+   ``` 
+   [assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomEntryRendererAndroid))]
     namespace RefreshViewDemo.Droid
     {
         public class CustomEntryRendererAndroid : EntryRenderer
@@ -44,3 +45,28 @@
         }
     }
     ```
+
+- Embeded Font Icon
+    * Download Icon https://fontawesome.com/download
+        extract to ShareApp on Fonts folder
+    
+    * Open AssemblyInfo On ShareApp
+        add
+            ```
+                            
+                [assembly: ExportFont("Font Awesome 6 Brands-Regular-400.otf", Alias = "FABrand")]
+                [assembly: ExportFont("Font Awesome 6 Free-Regular-400.otf", Alias = "FARegular")]
+                [assembly: ExportFont("Font Awesome 6 Free-Solid-900.otf", Alias = "FASolid")] 
+
+            ```
+
+    * Example 
+        On XAML : 
+            ```
+            <Label Text="&#xe1b0;" FontFamily="FASolid"></Label>
+            ```
+
+        On C# : 
+            ```
+                public const string Car = "\uf10b";
+            ```
