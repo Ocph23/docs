@@ -1,6 +1,6 @@
 # Xamarin
 - Remove Entry UnderLine
-    *On Share Project
+    * On Share Project
   ```
     public class EntryCustom : Entry
     {
