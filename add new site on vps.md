@@ -45,7 +45,7 @@ a2ensite aps.conf
 Add kestrel service
 nano /etc/systemd/system/kestrel-aps.service
 
-
+```
 [Unit]
 Description=Aplikasi Absen Koordinat
 
@@ -63,7 +63,7 @@ Environment=ASPNETCORE_ENVIRONMENT=Production
 [Install]
 WantedBy=multi-user.target
 
-
+```
 
 
 //Enable
@@ -74,6 +74,7 @@ sudo journalctl -fu kestrel-aps.service
 - github action
 add yml file for .net
 
+```
 name: .NET
 
 on:
@@ -134,14 +135,14 @@ jobs:
           script: systemctl restart kestrel-absenimigrasi.service
 
 
-
+```
 
 Get ssh key private from ~/.ssh
 
 
 - SSL
 * use Let's Encript (Certbot) Apache
-sudo certbot --apache
+``` sudo certbot --apache ```
 
 
 
