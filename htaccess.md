@@ -1,4 +1,6 @@
 #.htaccess for spa apps (blazor, angular) in share hosting 
+<code>
+
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} -s [OR]
@@ -11,6 +13,7 @@ RewriteRule ^(.*) /index.html [NC,L]"
 </IfModule>
  DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
 
+</code>
 
 
 #.htaccess for Laravel 11 
