@@ -18,9 +18,9 @@ RewriteRule ^(.*) /index.html [NC,L]"
 
 #.htaccess for Laravel 11 
 <code>
-<IfModule mod_rewrite.c>
+`<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+</IfModule>`
 </code>
 
